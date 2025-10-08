@@ -1,20 +1,27 @@
-import Image from "next/image";
-// import styles from "./page.module.css";
-
 export default function Home() {
+  const sectionStyle = {
+    width: "100%",
+    height: "600px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "2rem",
+    color: "#fff",
+  };
+
   return (
     <main>
-
-      <div style={{ width: '100%', height: '600px', padding: '20px', backgroundColor: 'red', textAlign: 'center' }}>
-        TESTE
-      </div>
-      <div style={{ width: '100%', height: '600px', padding: '20px', backgroundColor: 'green', textAlign: 'center' }}>
-        TESTE
-      </div>
-      <div style={{ width: '100%', height: '600px', padding: '20px', backgroundColor: 'blue', textAlign: 'center' }}>
-        TESTE
+      <div style={{ ...sectionStyle, backgroundColor: "red" }}>
+        <h1>TESTE</h1>
       </div>
 
-    </ main>
+      <div style={{ ...sectionStyle, backgroundColor: "green" }}>
+        <h1>TESTE</h1>
+      </div>
+
+      <div style={{ ...sectionStyle, backgroundColor: "blue" }}>
+        <h1>TESTE</h1>
+      </div>
+    </main>
   );
 }
