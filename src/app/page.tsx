@@ -10,16 +10,16 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <div style={{ ...sectionStyle, backgroundColor: "red" }}>
+    <main style={{ backgroundColor: '#200909' }}>
+      <div style={{ ...sectionStyle }}>
         <h1>TESTE</h1>
       </div>
 
-      <div style={{ ...sectionStyle, backgroundColor: "green" }}>
+      <div style={{ ...sectionStyle }}>
         <h1>TESTE</h1>
       </div>
 
-      <div style={{ ...sectionStyle, backgroundColor: "blue" }}>
+      <div style={{ ...sectionStyle }}>
         <h1>TESTE</h1>
       </div>
     </main>

@@ -2,8 +2,8 @@
   width: 100%;
   height: 64px;
   z-index: 99;
-  background-color: #fff;
   position: relative;
+  border-bottom:  1px solid #ffffff28;
 }
 
 .fixed {
@@ -19,10 +19,7 @@
   backdrop-filter: blur(4px);
 }
 
-.notFixed {
-  background-color: #fff;
-}
-
+ 
 .container {
   max-width: 1200px;
   height: 100%;
@@ -71,6 +68,42 @@
       transition: transform 200ms ease, color 200ms ease;
       will-change: transform;          /* sugere otimização ao navegador */
       text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover {
+        /* ou coloque o scale aqui se preferir */
+        transform: scale(1.09);
+        color: #c4c4c4; /* opcional */
+      }
+    }
+  }
+}
+
+.fixed  {
+    .nav {
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      /* se quiser que o hover do li afete o link */
+      &:hover a {
+        transform: scale(1.09);
+      }
+    }
+
+    a {
+      display: inline-block;           /* fundamental — permite transform */
+      transform: scale(1);             /* estado inicial */
+      transform-origin: center;        /* origem da transformação */
+      transition: transform 200ms ease, color 200ms ease;
+      will-change: transform;          /* sugere otimização ao navegador */
+      text-decoration: none;
       color: #000;
       font-weight: 600;
       text-transform: uppercase;
@@ -82,5 +115,6 @@
       }
     }
   }
+}
 }
 
