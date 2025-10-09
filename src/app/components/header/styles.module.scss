@@ -6,20 +6,6 @@
   border-bottom:  1px solid #ffffff28;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: rgba(252, 252, 252, 0.74);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-}
-
- 
 .container {
   max-width: 1200px;
   height: 100%;
@@ -36,14 +22,39 @@
   width: 100%;
 }
 
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(252, 252, 252, 0.74);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
 .contentLogo {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #000;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+}
+.fixed  {
+    .contentLogo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #000;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
 }
 
 .nav {
@@ -53,6 +64,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 
     li {
       /* se quiser que o hover do li afete o link */
@@ -83,38 +95,38 @@
 
 .fixed  {
     .nav {
-  ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-    li {
-      /* se quiser que o hover do li afete o link */
-      &:hover a {
-        transform: scale(1.09);
+        li {
+          /* se quiser que o hover do li afete o link */
+          &:hover a {
+            transform: scale(1.09);
+          }
+        }
+
+        a {
+          display: inline-block;           /* fundamental — permite transform */
+          transform: scale(1);             /* estado inicial */
+          transform-origin: center;        /* origem da transformação */
+          transition: transform 200ms ease, color 200ms ease;
+          will-change: transform;          /* sugere otimização ao navegador */
+          text-decoration: none;
+          color: #000;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover {
+            /* ou coloque o scale aqui se preferir */
+            transform: scale(1.09);
+            color: #333333; /* opcional */
+          }
+        }
       }
     }
-
-    a {
-      display: inline-block;           /* fundamental — permite transform */
-      transform: scale(1);             /* estado inicial */
-      transform-origin: center;        /* origem da transformação */
-      transition: transform 200ms ease, color 200ms ease;
-      will-change: transform;          /* sugere otimização ao navegador */
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-      text-transform: uppercase;
-
-      &:hover {
-        /* ou coloque o scale aqui se preferir */
-        transform: scale(1.09);
-        color: #333333; /* opcional */
-      }
-    }
-  }
-}
 }
 
