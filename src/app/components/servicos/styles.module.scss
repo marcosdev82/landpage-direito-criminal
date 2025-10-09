@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+
+.listCards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
