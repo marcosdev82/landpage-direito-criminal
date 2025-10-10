@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Banner from "./components/banner";
 import Servicos from "./components/servicos";
+import styles from './page.module.css';
+const imageUrl = "./visao-de-escalas-de-justica-3d.jpg";
 
 export default function Home() {
   const sectionStyle = {
@@ -14,13 +16,10 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <section>
-        <Banner />
-      </section>
-      <section>
-        <Servicos />
-      </section>
+    <main className={styles.main} style={{ backgroundImage: `url(${imageUrl})` }}>
+
+      <Banner />
+      <Servicos />
       <section style={{ ...sectionStyle }}>
         <div className="conainer">
           <div className="content">

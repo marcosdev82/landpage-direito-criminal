@@ -14,23 +14,25 @@ export default function Servicos() {
     ];
 
     return (
-        <div className={styles.container}>
-            <div className={styles.arrowDown}><ChevronsDown size={26} /></div>
-            <h1>Serviços</h1>
-            <h2>Como podemos te ajudar?</h2>
-            <div className={styles.listCards}>
-                {servicos.map(({ titulo, Icon }, index) => (
-                    <Card key={index}>
-                        <div className={styles.cardContent}>
-                            <div className={styles.iconWrapp}>
-                                <Icon size={32} />
+        <section className={styles.section}>
+            <div className={styles.container}>
+                <div className={styles.arrowDown}><ChevronsDown size={26} /></div>
+                <h1>Serviços</h1>
+                <h2>Como podemos te ajudar?</h2>
+                <div className={styles.listCards}>
+                    {servicos.map(({ titulo, Icon }, index) => (
+                        <Card key={index}>
+                            <div className={styles.cardContent}>
+                                <div className={styles.iconWrapp}>
+                                    <Icon size={32} />
+                                </div>
+                                <h2>{titulo}</h2>
+                                <p>Consulte um especialista</p>
                             </div>
-                            <h2>{titulo}</h2>
-                            <p>Consulte um especialista</p>
-                        </div>
-                    </Card>
-                ))}
+                        </Card>
+                    ))}
+                </div>
             </div>
-        </div >
+        </section>
     );
 }
