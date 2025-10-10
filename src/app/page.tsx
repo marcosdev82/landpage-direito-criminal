@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Banner from "./components/banner";
+import Servicos from "./components/servicos";
 
 export default function Home() {
   const sectionStyle = {
@@ -17,6 +18,9 @@ export default function Home() {
       <section>
         <Banner />
       </section>
+      <section>
+        <Servicos />
+      </section>
       <section style={{ ...sectionStyle }}>
         <div className="conainer">
           <div className="content">
@@ -27,19 +31,12 @@ export default function Home() {
               </p>
             </div>
             <div className="boxImage">
-              <Image src="" alt="Quem somos" width={500} height={300} />
+              {/* <Image src="" alt="Quem somos" width={500} height={300} /> */}
             </div>
           </div>
         </div>
       </section>
 
-      <div style={{ ...sectionStyle }}>
-        <h1>TESTE</h1>
-      </div>
-
-      <div style={{ ...sectionStyle }}>
-        <h1>TESTE</h1>
-      </div>
     </main>
   );
 }
