@@ -2,6 +2,7 @@ import Image from "next/image";
 import Banner from "./components/banner";
 import Servicos from "./components/servicos";
 import styles from './page.module.css';
+import ComoFunciona from "./components/como-funciona";
 const imageUrl = "./visao-de-escalas-de-justica-3d.jpg";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 
       <Banner />
       <Servicos />
+      <ComoFunciona />
       <section style={{ ...sectionStyle }}>
         <div className="conainer">
           <div className="content">

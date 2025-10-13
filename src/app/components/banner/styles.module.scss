@@ -1,5 +1,63 @@
 .banner {
-    height: 100vh;
+    height:80vh;
     width: 100%;
-    opacity: 0.2
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+        gap: 20px;
+
+        h1 {
+            font-size:  1.2rem;
+            font-weight: 400;
+            color: #ffcd6e;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .btnWhatsapp {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #25D366;
+            color: '#fff';
+            font-size: '20px';
+            padding: 10px 20px;
+            border-radius: 5px;
+            gap: 10px;
+        }
+         .btnWhatsapp:hover {
+            background-color: #1ebe5d;
+            cursor: pointer;    
+         }
+    }
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685); 
+    z-index: 0; 
+}
+.image {
+    z-index: 10;
+    margin-bottom: 10px;
 }

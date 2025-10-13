@@ -1,5 +1,5 @@
 .section {
-    background-color:  #0c0303;
+    background-color:  #0c0303e3;
 }
 .container {
     width: 100%;
@@ -31,6 +31,12 @@
         color: #fff;
         text-align: center;
         margin-top: 0.5rem;
+        font-weight: 400;
+    }
+    p {
+        color: #ccc;
+        text-align: center;
+        margin-top: 0.8rem;
         font-weight: 400;
     }
 }   
