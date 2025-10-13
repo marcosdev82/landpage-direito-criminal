@@ -19,6 +19,7 @@ export default function Servicos() {
                 <div className={styles.arrowDown}><ChevronsDown size={26} /></div>
                 <h1>Serviços</h1>
                 <h2>Como podemos te ajudar?</h2>
+                <p>Atuamos em processos criminais com foco na aplicação e interpretação das normas de forma mais favorável aos interesses do cliente.</p>
                 <div className={styles.listCards}>
                     {servicos.map(({ titulo, Icon }, index) => (
                         <Card key={index}>
