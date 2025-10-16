@@ -1,14 +1,17 @@
 import Image from 'next/image';
 import styles from './styles.module.scss'
 import Card from '../cards';
-import { FileText, Folder, MessagesSquare, Users } from 'lucide-react';
+
+const iconContact = "./contact.svg"
+const iconSoluction = "./soluctions.svg"
+const iconOrientation = "./orientation.svg"
 
 export default function ComoFuncionar() {
 
     const comoFunciona = [
-        { titulo: "Fale Conosco", Icon: MessagesSquare },
-        { titulo: "Orientação", Icon: Folder },
-        { titulo: "Solução", Icon: Users }
+        { titulo: "Fale Conosco", Icon: iconContact, whatsapp: "", description: "" },
+        { titulo: "Orientação", Icon: iconOrientation, whatsapp: "", description: "" },
+        { titulo: "Solução", Icon: iconSoluction, whatsapp: "", description: "" }
     ];
 
     return (
@@ -21,10 +24,17 @@ export default function ComoFuncionar() {
                         <Card key={index}>
                             <div className={styles.cardContent}>
                                 <div className={styles.iconWrapp}>
-                                    <Icon size={32} />
+                                    <Image
+                                        src={Icon}
+                                        alt={titulo}
+                                        width={32}
+                                        height={32}
+                                    // se quiser, ajuste objectFit via css ou prop style
+                                    />
                                 </div>
                                 <h2>{titulo}</h2>
                                 <p>Consulte um especialista</p>
+                                {/* <p><Icon size={12} /></p> */}
                             </div>
                         </Card>
                     ))}
