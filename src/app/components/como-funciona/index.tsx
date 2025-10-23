@@ -16,9 +16,10 @@ export default function ComoFuncionar() {
 
     return (
         <section className={styles.section}>
-            <h1>Como Funciona</h1>
-            <h2>Estamos aqui para te ajudar</h2>
             <div className={styles.container}>
+                <h1>Como Funciona</h1>
+                <h2>Estamos aqui para te ajudar</h2>
+                <p>Atuamos em processos criminais com foco na aplicação e interpretação das normas de forma mais favorável aos interesses do cliente.</p>
                 <div className={styles.listCards}>
                     {comoFunciona.map(({ titulo, Icon }, index) => (
                         <Card key={index}>
@@ -29,7 +30,6 @@ export default function ComoFuncionar() {
                                         alt={titulo}
                                         width={32}
                                         height={32}
-                                    // se quiser, ajuste objectFit via css ou prop style
                                     />
                                 </div>
                                 <h2>{titulo}</h2>
