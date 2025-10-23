@@ -24,6 +24,9 @@ export default function Home() {
       <Servicos />
       <ComoFunciona />
       <QuemSomos />
+      <section style={sectionStyle}> 
+        
+      </section>
     </main>
   );
 }
