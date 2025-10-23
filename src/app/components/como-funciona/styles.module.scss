@@ -1,32 +1,32 @@
 .section {
     background-color:  #fff;
 }
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 5rem 1rem;
-    position: relative;
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 5rem 1rem 10rem;
+        position: relative;
 
-    h1 {
-        color:#0c0303;
-        text-align: center;
-    }
+        h1 {
+            color:#0c0303;
+            text-align: center;
+        }
 
-    > h2 {
-        color: #0c0303;;
-        text-align: center;
-        margin-top: 0.5rem;
-        font-weight: 400;
-    }
-    p {
-        color: #464646;
-        text-align: center;
-        margin-top: 0.8rem;
-        font-weight: 400;
-    }
+        > h2 {
+            color: #0c0303;;
+            text-align: center;
+            margin-top: 0.5rem;
+            font-weight: 400;
+        }
+        p {
+            color: #464646;
+            text-align: center;
+            margin-top: 0.8rem;
+            font-weight: 400;
+        }
 
-}   
+    }   
 
 .listCards {
     display: grid;

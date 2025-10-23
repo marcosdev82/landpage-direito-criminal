@@ -7,5 +7,28 @@
     border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
+    position: relative;
+    overflow: hidden;
+}
+.card::before  {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #f3f3f3a8;
+    position: absolute;
+    right: -127px;
+    top: -120px;
+    border-radius: 100%;
+    z-index: 0;
+}
+.card::after  {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #bdbdbd73;
+    position: absolute;
+    right: -127px;
+    top: -150px;
+    border-radius: 100%;
+    z-index: 0;
 }
