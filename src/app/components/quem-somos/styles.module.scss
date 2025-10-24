@@ -1,6 +1,5 @@
 .section {
     background-color: rgba(12, 3, 3, 0.8901960784);
-    margin-bottom: 100px;
 }
 .container {
     width: 100%;
@@ -50,9 +49,9 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            background-image: url('../../../../public/retrato-de-advogado-de-vista-frontal_criminal.jpg');
+            background-position: center top;
         }
-
-       
 
         p {
             color:#fff;
