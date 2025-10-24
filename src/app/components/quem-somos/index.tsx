@@ -22,7 +22,7 @@ export default function QuemSomos() {
           </div>
 
           <div className={styles.boxImage}>
-            imagem
+           
           </div>
         </div>
       </div>
