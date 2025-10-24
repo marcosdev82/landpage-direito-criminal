@@ -1,12 +1,17 @@
-import { Link } from "lucide-react";
+'use client';
+import Link from "next/link";
 import styles from "./styles.module.scss";
-// import { Instagram } from "lucide-react";
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
-export default function SocialMedia() {
+const link = "#"
+export default function SocialMedia({ isFixed }: { isFixed: boolean }) {
     return(
-        <div className={styles.socialMedia}>
-            <ul>
-                <li><Link href="">item</Link></li>
+        <div className={`${styles.socialMedia} ${isFixed ? styles.isFixed : ""}`}>
+            <ul className={styles.listSocialMedia}>
+                <li><Link href={link}><BsInstagram size={25}/></Link></li>
+                <li><Link href={link}><BsFacebook size={25}/></Link></li>
+                <li><Link href={link}><BsTwitter size={25}/></Link></li>
+                <li><Link href={link}><BsYoutube size={25}/></Link></li>
             </ul>
         </div>
     );

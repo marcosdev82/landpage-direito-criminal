@@ -41,8 +41,9 @@ export default function Header() {
                             <li><Link href="/#servicos">Serviços</Link></li>
                             <li><Link href="/#contato">Contato</Link></li>
                         </ul>
+                        <SocialMedia isFixed={isFixed}/>
                     </nav>
-                    <SocialMedia />
+
                 </div>
             </div>
         </header>
