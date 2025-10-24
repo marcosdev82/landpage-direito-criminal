@@ -1,0 +1,21 @@
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        li {
+            display: flex;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+            }
+        }
+    }
+
+}

@@ -1,9 +1,9 @@
 'use client';
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import SocialMedia from "../social-midia";
 
 export default function Header() {
     const [isFixed, setIsFixed] = useState(false);
@@ -42,6 +42,7 @@ export default function Header() {
                             <li><Link href="/#contato">Contato</Link></li>
                         </ul>
                     </nav>
+                    <SocialMedia />
                 </div>
             </div>
         </header>
