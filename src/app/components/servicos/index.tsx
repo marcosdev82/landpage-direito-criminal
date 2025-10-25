@@ -1,3 +1,4 @@
+'use client'
 import styles from "./styles.module.scss";
 import Card from "../cards";
 import { FileText, Folder, Users, Eye, Lock, User, Scale, ChevronsDown } from "lucide-react";
@@ -13,10 +14,18 @@ export default function Servicos() {
         { titulo: "Audiência de custódia", Icon: Scale },
     ];
 
+     
+    const handleScrollBotton = () => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+        });
+    };
+
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="servicos">
             <div className={styles.container}>
-                <div className={styles.arrowDown}><ChevronsDown size={26} /></div>
+                <div className={styles.arrowDown} ><ChevronsDown size={26} onClick={handleScrollBotton}/></div>
                 <h1>Serviços</h1>
                 <h2>Como podemos te ajudar?</h2>
                 <p>Atuamos em processos criminais com foco na aplicação e interpretação das normas de forma mais favorável aos interesses do cliente.</p>

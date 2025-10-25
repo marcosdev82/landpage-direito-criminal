@@ -1,5 +1,26 @@
 .section {
     background-color: rgba(12, 3, 3, 0.8901960784);
+    position: relative;
+}
+.section::before {
+    content: "";
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section::after {
+    content: "";
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .container {
     width: 100%;
@@ -14,7 +35,6 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
-        padding: 30px;
        
         .col{
             flex: 1; /* distribui igualmente */
@@ -43,14 +63,16 @@
             height: 80vh; /* ou auto */
             min-height: 400px;
             background-color: #000;
-            margin-top: -3.75rem;
-            margin-bottom: -3.75rem;
+            // margin-top: -3.75rem;
+            // margin-bottom: -3.75rem;
             border-radius: 2.5rem;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             -moz-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             background-image: url('../../../../public/retrato-de-advogado-de-vista-frontal_criminal.jpg');
             background-position: center top;
+            position: relative;
+            z-index: 1;
         }
 
         p {
