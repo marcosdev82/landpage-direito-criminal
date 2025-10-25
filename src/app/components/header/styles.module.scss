@@ -72,6 +72,10 @@
 }
 
 .nav {
+  display: flex;
+  gap: 20;
+  flex-direction: row;
+
   ul {
     display: flex;
     gap: 20px;

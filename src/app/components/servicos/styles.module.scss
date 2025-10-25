@@ -20,6 +20,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    & .arrowDown:hover {
+        background-color: #000;
+        color: #ffcd6e;
+        cursor: pointer;
     }
 
     h1 {

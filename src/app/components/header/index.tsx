@@ -1,9 +1,10 @@
 'use client';
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import SocialMedia from "../social-midia";
+import { scrollToSection } from "@/app/utils/scrollToSection";
 
 export default function Header() {
     const [isFixed, setIsFixed] = useState(false);
@@ -16,6 +17,11 @@ export default function Header() {
         window.addEventListener("scroll", scrollHandler);
         return () => window.removeEventListener("scroll", scrollHandler);
     }, []);
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+        e.preventDefault(); // previne recarregamento
+        scrollToSection(sectionId);
+    };
 
     return (
         <header
@@ -37,11 +43,25 @@ export default function Header() {
                     </div>
                     <nav className={styles.nav}>
                         <ul>
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/#servicos">Serviços</Link></li>
-                            <li><Link href="/#contato">Contato</Link></li>
+                            <li>
+                                <Link href="/" onClick={(e) => handleScroll(e, "banner")}>Home</Link>
+                            </li>
+                            <li>
+                                <Link href="/#servicos" onClick={(e) => handleScroll(e, "servicos")}>Serviços</Link>
+                            </li>
+                            <li>
+                                <Link href="/#quem-somos" onClick={(e) => handleScroll(e, "quem-somos")}>Quem Somos</Link>
+                            </li>
+                            <li>
+                                <Link href="/#como-funciona" onClick={(e) => handleScroll(e, "como-funciona")}>Como Funciona</Link>
+                            </li>
+                            <li>
+                                <Link href="/#contato" onClick={(e) => handleScroll(e, "contato")}>Contato</Link>
+                            </li>
                         </ul>
+                        <SocialMedia isFixed={isFixed}/>
                     </nav>
+
                 </div>
             </div>
         </header>

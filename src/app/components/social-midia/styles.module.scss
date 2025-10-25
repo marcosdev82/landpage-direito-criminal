@@ -1,0 +1,51 @@
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+
+  ul.listSocialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: flex;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #ffcd6e;
+        transition: transform 0.2s ease, color 0.2s ease;
+
+        &:hover {
+          transform: scale(1.09);
+          color: #ffffff;
+        }
+
+        svg {
+          fill: currentColor;
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  &.isFixed {
+    ul.listSocialMedia {
+      li {
+        a {
+            color: #000000;
+            
+            &:hover {
+            transform: scale(1.09);
+            color: #333333;
+            }
+        }
+      }
+    }
+  }
+}
