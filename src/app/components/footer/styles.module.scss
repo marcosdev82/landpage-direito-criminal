@@ -4,8 +4,8 @@
 .container {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: auto;
+    padding: 2rem 1rem;
     position: relative;
 
     .arrowDown {
@@ -27,4 +27,19 @@
         background-color: #000;
         color: #ffcd6e;
     }
+    .footerContent p {
+        margin: 5px 0;
+    }
+
+    .footerContent a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footerContent a:hover {
+        color: #ffcd6e; /* Cor de destaque quando o link for hovered */
+    }
 }
+
+   

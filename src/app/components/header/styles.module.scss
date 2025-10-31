@@ -4,6 +4,12 @@
   z-index: 99;
   position: relative;
   border-bottom:  1px solid #ffffff28;
+
+    .lcontentLogo {
+      a {
+        outline: none;
+      }
+    }
 }
 
 .container {
@@ -52,6 +58,10 @@
       font-size: 18px;
       font-weight: 800;
       text-transform: uppercase;
+
+      a {
+        outline: none;
+      }
     }
 }
 
@@ -101,6 +111,7 @@
       color: #ffcd6e;
       font-weight: 600;
       text-transform: uppercase;
+      outline: none;
 
       &:hover {
         /* ou coloque o scale aqui se preferir */
