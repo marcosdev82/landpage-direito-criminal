@@ -96,6 +96,8 @@
 
     li {
       /* se quiser que o hover do li afete o link */
+      line-height: 26px;
+
       &:hover a {
         transform: scale(1.09);
       }
@@ -135,6 +137,7 @@
         padding: 0;
 
         li {
+          line-height: 26px;
           /* se quiser que o hover do li afete o link */
           &:hover a {
             transform: scale(1.09);
