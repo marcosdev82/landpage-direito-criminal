@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import { Mail, PhoneIcon } from "lucide-react";
 
 export default function Contato(){
     return (
@@ -12,6 +13,17 @@ export default function Contato(){
                     Nossa equipe está pronta para entender o seu caso e oferecer a melhor solução possível, 
                     com atendimento ágil, sigiloso e totalmente personalizado às suas necessidades.
                 </p>
+               
+            </div>
+            <div className={styles.container}>
+                <div className={styles.infor}>
+                    <div className={styles.box}>
+                        <p><PhoneIcon size={36}/>(11) 1234-5678</p>
+                    </div>
+                    <div className={styles.box}>
+                        <p><Mail size={36}/>contato@empresa.com.br</p>
+                    </div>
+                </div>
             </div>
         </section>
     )

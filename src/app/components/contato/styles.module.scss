@@ -25,4 +25,37 @@
         margin-top: 0.8rem;
         font-weight: 400;
     }
+
+    .infor {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        width: 100%;
+        gap: 20px;
+
+        .box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            gap:  20px;
+            border: 1px solid #666666;
+
+            > p {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                gap: 20px;
+            }
+        }
+    }
 }

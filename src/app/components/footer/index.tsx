@@ -18,8 +18,6 @@ export default function Footer() {
             <div className={styles.container}>
                 <div className={styles.arrowDown} onClick={handleScrollTop}><ChevronsUp size={26} /></div>
                 <div className={styles.footerContent}>
-                    <p>Telefone: (11) 1234-5678</p>
-                    <p>Email: contato@empresa.com.br</p>
                     <p>&copy; 2025 Minha Empresa - Todos os direitos reservados</p>
                 </div>
             </div>
