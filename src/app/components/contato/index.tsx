@@ -1,3 +1,4 @@
+import Form from '../forms';
 import styles from './styles.module.scss'
 import { Mail, PhoneIcon } from "lucide-react";
 
@@ -13,9 +14,8 @@ export default function Contato(){
                     Nossa equipe está pronta para entender o seu caso e oferecer a melhor solução possível, 
                     com atendimento ágil, sigiloso e totalmente personalizado às suas necessidades.
                 </p>
-                <div className={styles.formContainer}>
-                    
-                </div>
+                
+                <Form />
                
             </div>
             <div className={styles.container}>
